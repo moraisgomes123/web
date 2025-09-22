@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enquiry - TechMobiles</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="enquiry-page">
+  <header>
+    <img src="image/logo.png" alt="Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Send an Enquiry</h1>
+    <form id="enquiryForm">
+      <div class="form-field">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-field">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-field">
+        <label for="product">Product:</label>
+        <select id="product" name="product" required>
+          <option value="" disabled selected>Select a product</option>
+          <option value="SmartPhone">SmartPhone</option>
+          <option value="Phone Cases">Phone Cases</option>
+          <option value="Chargers & Cables">Chargers & Cables</option>
+          <option value="Wireless Earbuds">Wireless Earbuds</option>
+          <option value="Screen Protectors">Screen Protectors</option>
+          <option value="Smartwatch Bands">Smartwatch Bands</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <div class="confirmation" id="confirmationMessage" style="display: none;">
+      ✅ Thank you! Your enquiry has been submitted successfully.
+    </div>
+  </main>
+  <footer>
+    <p>© 2025 TechMobiles & Accessories</p>
+  </footer>
+  <script>
+    document.getElementById("enquiryForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      document.getElementById("confirmationMessage").style.display = "block";
+    });
+  </script>
+</body>
+</html>
