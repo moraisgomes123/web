@@ -15,6 +15,22 @@ main {
   max-width: 1200px;
   margin: 20px auto;
 }
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centers the nav content horizontally */
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center; /* Centers the list items */
+  align-items: center;
+  gap: 30px; /* Space between nav items */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 * {
 box-sizing: border-box;
