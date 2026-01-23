@@ -117,6 +117,35 @@ nav ul {
     gap: var(--spacing-lg);
 }
 
+.search-bar {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .search-bar input {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      width: 200px;
+      font-size: 0.95rem;
+    }
+
+    .search-bar button {
+      padding: 10px 15px;
+      background-color:  #fafaf7;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: #111;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .search-bar button:hover {
+      background-color: #e6b800;
+    }
+
 /* Footer Styles */
 footer {
     background-color: var(--color-secondary-dark);
